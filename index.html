@@ -1,0 +1,30 @@
+<?php
+
+$storeName="web name agan";
+if(!empty($_GET)){
+	
+$judul=$_GET['raf'];	
+$aff ="http://www.xl415.com/apu.php?n=&zoneid=20410&direct=1&q=".urldecode($judul)."&s1=sport";	//link medihub keyword
+}else{
+$judul="not found";	
+$aff ="http://www.xl415.com/apu.php?n=&zoneid=18711&direct=1&s1=sport";	//link medihub singup
+}
+
+
+?>
+<html><head>
+    <meta charset="utf-8">
+    <title><?php echo $judul;?> | <?php echo $storeName;?></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<META HTTP-EQUIV="refresh" content="2;URL=<?php echo $aff;?>">
+	</head>
+	<body>
+	 <!-- Histats.com  START  (aync)-->
+	 <!-- Histats.com  END  -->
+	<center>
+	<img style="" src="loading.gif" />
+	<center>
+	</body>
+	</html>
